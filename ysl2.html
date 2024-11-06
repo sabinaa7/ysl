@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ysl2.css">
+</head>
+<body>
+    <h1>YVES SAINT LAURENT</h1>
+    <div class="menu">
+        <div class="container">
+            <a href="ysl.html">HOME</a>
+            <a href="ysl2.html">STORE</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT US</a>
+        </div>
+    </div>
+    <hr>
+
+    <div class="flex">
+       <img src="2 page.jpg" width="80%">
+       <div class="makeup-icons">
+           <h1 style="position: relative; top: 20%; left:10px ;">DIVE INTO OUR MAKEUP ICONS</h1>
+           <p style="position: relative; top: 21%; left: 5px; margin: 33px;">Get ready to push the boundaries of beauty. Dare to own that flawless couture edge with YSL Beauty makeup essentials. </p>
+       </div>
+    </div>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="new1.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="new2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="new3.png" style="width:100%">
+        </div>
+          
+        <div class="mySlides fade">
+            <img src="new4.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="new5.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="new6.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="new7.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="new8.png" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+        
+   
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+
+    
+<div class="gallery">
+    <div class="product">
+        <img src="p1.jpg" class="img">
+        <div class="overlay">COUTURE MINI CLUTCH EYESHADOW PALETTE</div>
+    </div>
+    <div class="product">
+        <img src="p2.jpg" class="img">
+        <div class="overlay">LUMINOUS MATTE CUSHION FOUNDATION</div>
+    </div>
+    <div class="product">
+        <img src="p3.jpg" class="img">
+        <div class="overlay">YSL LOVESHINE CANDY GLAZE</div>
+    </div>
+    <div class="product">
+        <img src="p4.jpg" class="img">
+        <div class="overlay">INTENSLY PIGMENTED DEMI-MATTE LIPSTICK</div>
+    </div>
+    <div class="product">
+        <img src="p5.jpg" class="img">
+        <div class="overlay">NATURAL HEALTHY GLOW. HIGH COVERAGE. 24H HYDRATION.</div>
+    </div>
+    <div class="product">
+        <img src="p6.jpg" class="img">
+        <div class="overlay">THE GLASSY SHINE OF A GLOSS WITH THE CARE OF A BALM FOR JUICY LOOKING LIPS</div>
+    </div>
+    <div class="product">
+        <img src="p7.jpg" class="img">
+        <div class="overlay">YSL bronzer that's soft with a subtle shimmer and comes in a couture clutch</div>
+    </div>
+    <div class="product">
+        <img src="p13.jpg" class="img">
+        <div class="overlay">VES SAINT LAURENY All HOURS CREASELLES PRECIESE ANGELS CONCEALER - MN7</div>
+    </div>
+    <div class="product">
+        <img src="p9.jpg" class="img">
+        <div class="overlay">DISCOVER YSL BEAUTY AT SEPHORA</div>
+    </div>
+    <div class="product">
+        <img src="p10.jpg" class="img">
+        <div class="overlay">YSL ROUGE VOLUPTE SHINE HOLIDAY LIPSTICK COLLECTOR</div>
+    </div>
+    <div class="product">
+        <img src="p11.jpg" class="img">
+        <div class="overlay">YSL FUSION INK FUNDATION LAUNCHES AT SEPHORA</div>
+    </div>
+    <div class="product">
+        <img src="p12.jpg" class="img">
+        <div class="overlay">11 THINGS WE LEARNED AFTER SPENDING 15 MINUTES WITH ALESSANDRA STEINHERR</div>
+    </div>
+</div>
+
+<div class="split-screen">
+    <div class="image-section">
+        <img src="make.PNG" alt="YSL Beauty Recycling Campaign" style="position: relative; top: 30%; width: 100%; left: 20%;">
+    </div>
+    <div class="text-section">
+        <h1 style="position: relative; left: 3%;">LEARN TO MAKEUP</h1>
+        <p style="position: relative; left: 18%;">If you want to do makeup with YSL click here.<br></p>
+        <a href="https://youtu.be/7U09XJ7fsYA?si=f-2CRvNNhEwIwE-R" target="_blank">
+            <button style="position: relative; left: 20%; width: 70%;">DISCOVER MORE</button>
+        </a>
+    </div>
+    
+
+
+<footer>
+    <div class="footer">
+        <div class="footer-column">
+            <h3>SHOP YSL BEAUTY</h3>
+            <ul>
+                <li><a href="#">MAKEUP</a></li>
+                <li><a href="#">FRAGRANCE</a></li>
+                <li><a href="#">SKINCARE</a></li>
+                <li><a href="#">GIFTSETS</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>OUR NEWS</h3>
+            <ul>
+                <li><a href="#">YSL BEAUTY EDIT</a></li>
+                <li><a href="#">PUSH THE BOUNDARIES</a></li>
+                <li><a href="#">BLACK FRIDAY</a></li>
+                <li><a href="#">HOLIDAY</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>EXCLUSIVE SERVICES</h3>
+            <ul>
+                <li><a href="#">VIRTUAL MAKE UP TRY ON</a></li>
+                <li><a href="#">AI SKINCARE DIAGNOSIS</a></li>
+                <li><a href="#">FRAGRANCE FINDER</a></li>
+                <li><a href="#">FOUNDATION SHADE FINDERS</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>DISCOVER YSL BEAUTY</h3>
+            <ul>
+                <li><a href="#">YSL BEAUTY CLUB</a></li>
+                <li><a href="#">OUR COMMITMENTS</a></li>
+                <li><a href="#">OURIKA COMMUNITY GARDENS</a></li>
+                <li><a href="#">DARE TO RECYCLE</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>CONTACT US</h3>
+            <p>For any question, please contact us via our contact form</p>
+            <div class="social-icons">
+                <a href="https://ru-ru.facebook.com/"><img src="./facebook.png" alt="Facebook"></a>
+                <a href="https://x.com/?mx=2"><img src="./twitter.png" alt="Twitter"></a>
+                <a href="https://uk.pinterest.com/pin/915356693012176974/"><img src="./pinterest.png" alt="Pinterest"></a>
+                <a href="https://www.instagram.com/ysl?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="./instagram.png" alt="Instagram"></a>
+                <a href="https://youtu.be/3TgBYuskCtE?si=WVupLmuVvQvOCoSI"><img src="./youtube.png" alt="YouTube"></a>
+            </div>
+            <select class="language-selector">
+                <option value="en">EN</option>
+                <option value="fr">FR</option>
+                <option value="es">ES</option>
+            </select>
+        </div>
+    </div>
+
+    
+</footer>
+</body>
+</html>

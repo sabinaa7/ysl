@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" a href="ysl.css">
+</head>
+<body>
+    <div class="all-bgc">
+    <h1>YVES SAINT LAURENT</h1>
+    <video class="bgc-video" autoplay muted loop>
+        <source src="libre ysl video mp4.mp4"></source>
+    </video>
+    <div class="menu">
+        <div class="container">
+            <a href="ysl.html">HOME</a>
+            <a href="ysl2.html">STORE</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT US</a>
+        </div>
+        </div>
+    </div>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="90ml parfume 2.png" style="width:100%">
+           
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="90ml parfume.png" style="width:100%">
+           
+        </div>
+
+        <div class="mySlides fade">
+            <img src="90ml libre 3.png" style="width:100%">
+         </div>
+          
+         <div class="mySlides fade">
+            <img src="50ml parfume 2.png" style="width:100%">
+           
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="50ml parfume 3.png" style="width:100%">
+           
+        </div>
+
+        <div class="mySlides fade">
+            <img src="50ml parfume.png" style="width:100%">
+            <div class="text">
+              </div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+        <br>
+        
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+        
+    <footer>
+        <div class="footer">
+            <div class="footer-column">
+                <h3>SHOP YSL BEAUTY</h3>
+                <ul>
+                    <li><a href="#">MAKEUP</a></li>
+                    <li><a href="#">FRAGRANCE</a></li>
+                    <li><a href="#">SKINCARE</a></li>
+                    <li><a href="#">GIFTSETS</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>OUR NEWS</h3>
+                <ul>
+                    <li><a href="#">YSL BEAUTY EDIT</a></li>
+                    <li><a href="#">PUSH THE BOUNDARIES</a></li>
+                    <li><a href="#">BLACK FRIDAY</a></li>
+                    <li><a href="#">HOLIDAY</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>EXCLUSIVE SERVICES</h3>
+                <ul>
+                    <li><a href="#">VIRTUAL MAKE UP TRY ON</a></li>
+                    <li><a href="#">AI SKINCARE DIAGNOSIS</a></li>
+                    <li><a href="#">FRAGRANCE FINDER</a></li>
+                    <li><a href="#">FOUNDATION SHADE FINDERS</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>DISCOVER YSL BEAUTY</h3>
+                <ul>
+                    <li><a href="#">YSL BEAUTY CLUB</a></li>
+                    <li><a href="#">OUR COMMITMENTS</a></li>
+                    <li><a href="#">OURIKA COMMUNITY GARDENS</a></li>
+                    <li><a href="#">DARE TO RECYCLE</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>CONTACT US</h3>
+                <p>For any question, please contact us via our contact form</p>
+                <div class="social-icons">
+                    <a href="https://ru-ru.facebook.com/"><img src="./facebook.png" alt="Facebook"></a>
+                    <a href="https://x.com/?mx=2"><img src="./twitter.png" alt="Twitter"></a>
+                    <a href="https://uk.pinterest.com/pin/915356693012176974/"><img src="./pinterest.png" alt="Pinterest"></a>
+                    <a href="https://www.instagram.com/ysl?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="./instagram.png" alt="Instagram"></a>
+                    <a href="https://youtu.be/3TgBYuskCtE?si=WVupLmuVvQvOCoSI"><img src="./youtube.png" alt="YouTube"></a>
+                </div>
+                <select class="language-selector">
+                    <option value="en">EN</option>
+                    <option value="fr">FR</option>
+                    <option value="es">ES</option>
+                </select>
+            </div>
+        </div>
+
+        
+    </footer>
+
+    
+        
+    
+       
+ 
+
+   
+</body>
+</html>
