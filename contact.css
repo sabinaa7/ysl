@@ -99,8 +99,13 @@ hr {
 .sign-in-form button:hover {
     background-color: #45a049;
 }
+footer{
+    position: absolute;
+    top: 150%;
+    width: 100%;
+}
 
-/* Медиазапросы для адаптации под маленькие экраны */
+
 @media (max-width: 768px) {
     .sign-in-form {
         width: 90%;
